@@ -3,13 +3,15 @@ import React, {useState} from 'react'
 import RegisterForm from '../components/Register'
 import LoginForm from '../components/Login'
 import ImgLoginComponent from '../components/ImgLoginComponent'
-// import Register from './components/Register'
 
 
 
 
-const Login = () => {
+
+const Login =  () => {
     const [isRegistered, setisRegistered] = useState(false)
+    
+
   return (
     <section className="w-full min-h-screen  flex  items-center justify-evenly ">
         <ImgLoginComponent isRegistered={isRegistered}/>
@@ -27,7 +29,7 @@ const Login = () => {
         <p className='text-base font-light text-textColor   '>
         Access Your UdMr Dashboard: Sign In to Explore Your Courses and Progress.
         </p>
-        {!isRegistered ? <LoginForm/>: <RegisterForm/> }
+        {!isRegistered ? <LoginForm/>: <RegisterForm setisRegistered={setisRegistered} /> }
     </div>
     </section>
   )
