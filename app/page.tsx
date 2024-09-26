@@ -3,12 +3,13 @@ import Image  from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import axios from "axios";
-import { useSession, signIn, signOut } from 'next-auth/react';
-import LogoutAction from "@/lib/auth/LogoutAction";
+import {signIn, signOut } from 'next-auth/react';
+
+
 
 export default function Home() {
   const router = useRouter()
-  
+
     const handleLogin = async () => {
       // You can call signIn programmatically
       signIn();
