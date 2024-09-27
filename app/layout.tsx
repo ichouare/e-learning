@@ -5,6 +5,7 @@ import "./globals.css";
 import ContextAuth from "@/context/Context";
 import { getServerSession } from 'next-auth/next';
 import { OPTIONS } from "./api/auth/[...nextauth]/route";
+import Navbar from "@/Components/Navbar";
 // import { useRouter } from "next/navigation";
 
 
@@ -29,8 +30,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       
-      <body className={`${font.className} flex  grow flex-col items-center md:px-24` }>
-   
+      <body className={`${font.className}  w-full  flex flex-col  items-center  justify-center max-h-screen    ` }>
         {children}
         </body>
       {/* </ContextAuth> */}

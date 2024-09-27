@@ -15,6 +15,7 @@
     "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "bcryptjs-react": "^2.4.6",
+    "gsap": "^3.12.5",
     "next": "14.2.7",
     "next-auth": "^4.24.7",
     "react": "^18",
