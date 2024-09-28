@@ -11,12 +11,13 @@ import Img from '@/public/img1.png'
 import Img2 from '@/public/Assisted Student.png'
 import Img3 from '@/public/Img3.png'
 import SuccessComponent from "@/Components/SuccessComponent";
+import CloudSoftware from "@/Components/CloudSoftware";
 
 
 
 const Banner = () => {
   return (
-    <section className="w-full h-[850px]  flex items-center justify-between  px-6 " >
+    <section className="w-full h-[900px]  flex items-center justify-between  px-6 " >
         <div className="max-w-[681px] h-[404px] text-white  flex flex-col gap-12  ">
           <h1 className="font-bold text-[54px]">
          <strong className="text-[#F48C06]">
@@ -32,9 +33,9 @@ const Banner = () => {
             }}>
               join for free
             </button>
-            <div className=" flex items-center justify-between w-[50%]">
+            <div className=" flex items-center justify-between w-[50%] h-full">
             <button className="h-16 w-16  bg-white rounded-full grid place-content-center cursor-pointer">
-              <Image src={StartImg} alt="start" className="object-contain w-6 h-6" />
+              <Image src={StartImg} alt="start" className="object-contain w-6 h-6 inline" />
             </button>
             <p className="text-[24px] text-black font-light leading-7">
             Watch how it works
@@ -42,11 +43,11 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="h-full p-0 relative ">
+        <div className="h-full p-0 relative   mt-4 ">
           <Image src={Img} alt="img" className="w-12 h-12 object-fill absolute top-48 right-20" />
           <Image src={Img2} alt="img" className=" object-fill absolute top-64 -left-36" />
           <Image src={Img3} alt="img" className=" object-fill absolute bottom-28 -left-44" />
-          <Image src={lovelygirl} alt="lovely-teenage-girl" className="w-full h-full object-fill mt-2" />
+          <Image src={lovelygirl} alt="lovely-teenage-girl" className="w-full h-full object-fill" />
         </div>
     </section>
   )
@@ -68,14 +69,15 @@ export default function Home() {
 
   return (
     <main className="font-popping bg-white  h-screen flex flex-col items-center justify-start container lg:min-w-[1700px]  gap-y-8 ">
-       <header className="w-full min-h-[900px] rounded-b-[200px] bg-primary  relative px-24   " >
+       <header className="w-full  h-auto  bg-lprimary  relative px-24   " >
           <Navbar />
           <Banner />
-          {/* <div className=" h-[200px]  rounded-b-[500px] bg-red-500 absolute bottom-0">
+           {/* <div className="w-[2100px] h-[50px]   bg-red-500  absolute -left-44 rounded-full -bottom-10  ">
           </div> */}
       </header>
-      <section className="">
+      <section className="w-full h-auto gapy-8">
         <SuccessComponent />
+        <CloudSoftware />
       </section>
     </main>
   );
