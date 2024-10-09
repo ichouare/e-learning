@@ -5,7 +5,7 @@ import "./globals.css";
 import ContextAuth from "@/context/Context";
 import { getServerSession } from 'next-auth/next';
 import { OPTIONS } from "./api/auth/[...nextauth]/route";
-import Navbar from "@/Components/Navbar";
+import Navbar from "@/ui/Components/Navbar";
 // import { useRouter } from "next/navigation";
 
 

@@ -4,14 +4,14 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import axios from "axios";
 import {signIn, signOut } from 'next-auth/react';
-import Navbar from "@/Components/Navbar";
+import Navbar from "@/ui/Components/Navbar";
 import StartImg from '@/public/start.png'
 import lovelygirl from '@/public/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png'
 import Img from '@/public/img1.png'
 import Img2 from '@/public/Assisted Student.png'
 import Img3 from '@/public/Img3.png'
-import SuccessComponent from "@/Components/SuccessComponent";
-import CloudSoftware from "@/Components/CloudSoftware";
+import SuccessComponent from "@/ui/Components/SuccessComponent";
+import CloudSoftware from "@/ui/Components/CloudSoftware";
 
 
 
